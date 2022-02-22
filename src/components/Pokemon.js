@@ -2,16 +2,9 @@ import React from "react";
 import PokeCard from "./PokeCard";
 import "../index.css";
 
-export default function Pokemon({
-  pokemons,
-  prev,
-  isLoading,
-  next,
-  theme,
-  setTheme,
-}) {
+export default function Pokemon({ pokemons, prev, isLoading, next }) {
   return (
-    <div className="landing-page" theme={theme} setTheme={setTheme}>
+    <div className="landing-page">
       {isLoading ? (
         <h1 style={{ textAlign: "center" }}>Loading...</h1>
       ) : (

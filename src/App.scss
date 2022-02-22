@@ -241,4 +241,23 @@
       display: none;
     }
   }
+
+}
+.back-button {
+  margin: 2rem;
+  border: none;
+  background: #367AAC;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: all .5s linear;
+
+  &:hover{
+    background-color: #E4E4E4;
+    color: #367AAC;
+    transition: all .5s ease-in-out;
+  }
 }

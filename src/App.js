@@ -30,7 +30,6 @@ function App() {
   const [nextPageURL, setNextPageURL] = useState();
   const [previousPageURL, setPreviousPageURL] = useState();
   const [isLoading, setIsLoading] = useState(true);
-  const [theme, setTheme] = useState("light");
 
   const PokemonURL = "https://pokeapi.co/api/v2/pokemon?limit=20";
 
@@ -92,8 +91,6 @@ function App() {
                 next={next}
                 prev={prev}
                 isLoading={isLoading}
-                theme={theme}
-                setTheme={setTheme}
               />
             )}
           />

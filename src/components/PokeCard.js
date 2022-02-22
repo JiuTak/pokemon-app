@@ -1,7 +1,6 @@
 import React from "react";
-import "../App.scss";
-
 import { Link } from "react-router-dom";
+import "../App.scss";
 
 export default function PokeCard({ pokemon }) {
   return (
