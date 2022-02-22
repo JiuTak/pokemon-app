@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-inline: 4rem;
+  flex: 1 0 21%;
+}
+
+.pokecard {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #E4E4E4;
+  border-radius: 30px;
+  box-shadow: 0px 2px 10px #00000029;
+  flex: 1 0 20%;
+  opacity: 1;
+  max-width: 250px;
+  min-height: 450px;
+  max-height: 550px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokecard-upper-part {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pokecard-under-part {
+  padding: 2rem;
+}
+
+.pokecard-img {
+  text-align: center;
+  /* background-color: #367AAC; */
+  background: #367AAC 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px -1px 10px #00000029;
+  border: 1px solid #E4E4E4;
+  border-radius: 20px;
+  opacity: 1;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem;
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.pokecard-name {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.pokecard-types {
+  display: flex;
+  justify-content: center;    
+}
+
+.pokecard-type {
+  padding: 5px 10px;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+  background: cyan;
+  color: #fff;
+}
+
+.pokecard-info {
+  width: 100%;
+}
+
+.pokecard-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    margin: unset;
+    font-size: 1rem;
+  }
+}
+
+.pokecard-data .title {
+  font-family: 'Cairo', sans-serif;
+  font-size: 1rem;
+}
+
+.pagination-button{
+  margin: 1rem;
+}
+
+.button-style {
+  border: unset;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.see-detail-button {
+  border: unset;
+  background-color: transparent;
+  cursor: pointer;
+  border-top: 1px solid #E4E4E4;
+  width: 200px;
+
+  a {
+    text-decoration: none;
+    color: #367AAC;
+  }
+  
+  &:hover {
+    transform: scale(1.125);
+    color: #a7d7fa;
+    text-decoration: underline;
+  }
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1rem;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #E4E4E4;
+  box-shadow: 0px 2px 10px #00000029;
+  padding: 2rem;
+}
+
+.input-container {
+  padding-inline-start: 0.5rem ;
+
+  input {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+}
+
+.search-teams-inputbar {
+  width: 400px;
+  height: 50px;
+  padding-inline-start: 0.5rem ;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.sorting-item {
+  width: 200px;
+  height: 50px;
+  padding-inline-start: 0.5rem ;
+}
+
+.details-part {
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+}
