@@ -4,12 +4,7 @@ export default function NavBar() {
   return (
     <div className="navbar-container">
       <div>
-        <select
-          className="sorting-item"
-          //   defaultValue="DEFAULT"
-          //   onChange={(e) => setOption(e.target.value)}
-          //   className="sort-options"
-        >
+        <select className="sorting-item">
           <option className="sort-value" value="10-cards">
             Showing 10 results
           </option>
@@ -25,9 +20,7 @@ export default function NavBar() {
         />
       </div>
       <div>
-        <select
-          className="sorting-item"
-        >
+        <select className="sorting-item">
           <option value="Sort items">Sort items</option>
           <option className="sort-value" value="AlphabeticallyAZ">
             A-Z

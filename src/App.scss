@@ -77,7 +77,7 @@
 
 .pokecard-name {
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
   font-weight: 900;
@@ -139,7 +139,7 @@
     text-decoration: none;
     color: #367AAC;
   }
-  
+
   &:hover {
     transform: scale(1.125);
     color: #a7d7fa;
@@ -168,7 +168,6 @@
     font-weight: normal;
     text-decoration: none;
   }
-
 }
 
 .search-teams-inputbar {
@@ -176,7 +175,6 @@
   height: 50px;
   padding-inline-start: 0.5rem ;
   font-family: 'Poppins', sans-serif;
-
 }
 
 .sorting-item {
@@ -190,4 +188,57 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 1rem;
+}
+
+//PokemonDetails.js
+.pokemon-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  .detail-pokemon-image {
+    img {
+      width: 250px;
+      height: 250px;
+      background: #367AAC 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+    }
+  }
+
+  .detail-pokemon-name {
+    text-transform: uppercase;
+  }
+
+  .detail-highlight {
+    display: flex;
+    margin-bottom: 2rem;
+
+    .detail-content {
+      margin-inline: 1.5rem;
+    }
+  }
+
+  .detail-select {
+    display: flex;
+    width: 80%;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E4E4E4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px #00000029;
+    opacity: 1;
+    padding-inline: 2rem;
+    margin-bottom: 1.125rem;
+
+    .detail-abilities {
+      display: flex;
+      align-items: center;
+    }
+
+    .more-details {
+      display: none;
+    }
+  }
 }

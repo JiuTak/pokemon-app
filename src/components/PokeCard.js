@@ -1,5 +1,4 @@
 import React from "react";
-import DetailedPokemon from "./PokemonDetails";
 import "../App.scss";
 
 import { Link } from "react-router-dom";
@@ -13,15 +12,6 @@ export default function PokeCard({ pokemon }) {
             <img src={pokemon.sprites.front_default} alt="" />
           </div>
           <div className="pokecard-name">{pokemon.name}</div>
-          {/* <div className="pokecard-types">
-        {pokemon.types.map((type) => {
-          return (
-            <div className="pokecard-type" style={{ backgroundColor: "wheat" }}>
-              {type.type.name}
-            </div>
-          );
-        })}
-      </div> */}
           <div className="pokecard-info">
             <div className="pokecard-data pokecard-data-weight">
               <p className="title">Weight</p>
@@ -40,7 +30,7 @@ export default function PokeCard({ pokemon }) {
         <div className="pokecard-under-part">
           <button className="see-detail-button">
             <Link to={`/detailed-pokemon/${pokemon.id}`} key={pokemon.id}>
-              <DetailedPokemon pokemon={pokemon} />
+              <div className="details-part">See Details</div>
             </Link>
           </button>
         </div>
